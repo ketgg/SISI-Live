@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: 28 28 28;
+  --white: 255 255 255;
+  --grey: 118 118 118;
+
+  --lilac: 105 74 220;
+  --alice-blue: 220 235 252;
+  --lime-green: 96 190 96;
+  --yellow: 255 254 90;
+  --orange: 250 110 62;
+  --red: 240 68 68;
+  --pink: 236 72 152;
+
+  --background: var(--white);
+  --foreground: var(--black);
+  --border: var(--grey);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--black);
+    --foreground: var(--white);
+    --border: var(--grey);
+  }
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: rgb(var(--background));
+  background: rgb(var(--foreground));
+}
+
+::selection {
+  color: rgb(var(--background));
+  background: rgb(var(--foreground));
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--grey)) transparent;
+  }
+}
+
+/* Chrome, Edge, and Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  *::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 2px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--grey));
+    border-radius: 2px;
+    border: 0px solid transparent;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--foreground));
+  }
+}
