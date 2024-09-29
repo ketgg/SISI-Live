@@ -2,7 +2,8 @@ const Intro = () => {
   return (
     <>
       <h2 className="text-xl md:text-2xl">
-        Hello! I'm <strong>SISI</strong> — short for "Say It, Sign It!"
+        Hello! I&apos;m <strong>SISI</strong> — short for &quot;Say It, Sign
+        It!&quot;
       </h2>
       <p className="font-extralight text-sm md:text-base">
         I can turn your text or audio into American Sign Language(ASL)
@@ -10,7 +11,7 @@ const Intro = () => {
         <strong className="bg-foreground text-background rounded-full px-[0.375rem]">
           Record
         </strong>{" "}
-        button to speak your input. Once you're ready, hit the{" "}
+        button to speak your input. Once you&apos;re ready, hit the{" "}
         <strong className="bg-foreground text-background rounded-full px-[0.375rem]">
           Play
         </strong>{" "}

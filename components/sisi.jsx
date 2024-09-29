@@ -20,7 +20,7 @@ const Model = ({ position, rotation, currentWord, onAnimationFinish }) => {
 
   useEffect(() => {
     setAnimationsList(names)
-  }, [names])
+  }, [])
 
   useEffect(() => {
     const idleAction = actions["0_Idle"]
@@ -53,7 +53,7 @@ const Model = ({ position, rotation, currentWord, onAnimationFinish }) => {
         idleAction.stop()
       }
     }
-  }, [currentWord])
+  }, [currentWord, actions, mixer, onAnimationFinish])
 
   return (
     <group ref={group} position={position} rotation={rotation} dispose={null}>
