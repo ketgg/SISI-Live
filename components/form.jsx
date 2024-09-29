@@ -28,10 +28,6 @@ const Form = ({ action, isPlaying, setIsPlaying }) => {
       return
     }
 
-    if (text !== "") {
-      setText("")
-    }
-
     const SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition
 
@@ -39,6 +35,11 @@ const Form = ({ action, isPlaying, setIsPlaying }) => {
       dialogRef.current.showModal()
       return
     }
+
+    if (text !== "") {
+      setText("")
+    }
+
     // const recognition = new SpeechRecognition()
     recognitionRef.current = new SpeechRecognition()
 
