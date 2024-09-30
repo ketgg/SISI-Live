@@ -5,7 +5,7 @@ const Footer = async () => {
   const links = JSON.parse(file)
 
   return (
-    <footer className="w-full bg-background font-grotesk-wide py-3 px-[4%]">
+    <footer className="w-full bg-background font-grotesk-wide py-2 px-[4%]">
       <div className="flex justify-center items-end max-w-[1280px] h-full mx-auto text-border text-sm md:text-base leading-[0.875rem] md:leading-4">
         <div>
           Crafted with{" "}

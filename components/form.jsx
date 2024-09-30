@@ -75,7 +75,7 @@ const Form = ({ action, isPlaying, setIsPlaying }) => {
         <div
           className={`flex relative w-full border ${
             isActive ? "border-foreground" : "border-border"
-          } rounded-[24px]`}
+          } rounded-[1.25rem] md:rounded-3xl`}
         >
           <textarea
             ref={textAreaRef}
@@ -85,13 +85,13 @@ const Form = ({ action, isPlaying, setIsPlaying }) => {
             onChange={handleInput}
             onFocus={() => setActive(true)}
             onBlur={() => setActive(false)}
-            className="bg-transparent text-foreground text-sm md:text-base w-full max-h-[144px] my-2 ml-4 focus:ring-0 focus:outline-none resize-none font-light placeholder:text-foreground/60 transition-colors"
+            className="bg-transparent text-foreground text-sm leading-5 md:text-base md:leading-6 w-full max-h-[144px] my-2 ml-4 focus:ring-0 focus:outline-none resize-none font-light placeholder:text-foreground/60 transition-colors"
             placeholder="Start typing here..."
             rows={1}
           ></textarea>
           {text !== "" && (
             <svg
-              className="overflow-visible my-2 mx-2 self-end transition-all duration-200"
+              className="w-5 h-5 md:w-6 md:h-6 overflow-visible my-2 mx-2 self-end transition-all duration-200"
               viewBox="0 0 24 24"
               width="24"
               height="24"

@@ -85,9 +85,9 @@ const Home = () => {
   }
 
   return (
-    <main className="mt-[72px] md:mt-[84px] px-[4%] py-2 sm:py-6 md:py-10 mb-16">
+    <main className="pt-20 md:pt-28 pb-6 px-[4%] min-h-screen">
       <section className="grid grid-cols-1 md:grid-cols-[36%_auto] gap-3 max-w-[1280px] min-h-[540px] md:min-h-[480px] mx-auto">
-        <div className="">
+        <div className="min-h-72 sm:min-h-80 bg-transparent">
           <Scene
             currentWord={currentWord}
             onAnimationFinish={handleAnimationFinish}

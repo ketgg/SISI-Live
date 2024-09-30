@@ -10,7 +10,7 @@ const Scene = ({ currentWord, onAnimationFinish }) => {
   return (
     <Suspense fallback={<Loading />}>
       <Canvas
-        className="relative"
+        className="relative bg-background"
         camera={{ position: [0, 0.5, 1.5], fov: 60 }}
       >
         {/* <gridHelper />
