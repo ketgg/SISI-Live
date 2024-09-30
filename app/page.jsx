@@ -85,8 +85,8 @@ const Home = () => {
   }
 
   return (
-    <main className="pt-20 md:pt-28 pb-6 px-[4%] min-h-screen">
-      <section className="grid grid-cols-1 md:grid-cols-[36%_auto] gap-3 max-w-[1280px] min-h-[540px] md:min-h-[480px] mx-auto">
+    <main className="pt-20 md:pt-24 lg:pt-32 pb-6 md:pb-16 px-[4%] min-h-screen">
+      <section className="grid grid-cols-1 md:grid-cols-[36%_auto] md:py-4 gap-3 max-w-[1280px] min-h-[540px] md:min-h-[480px] mx-auto">
         <div className="min-h-72 sm:min-h-80 bg-transparent">
           <Scene
             currentWord={currentWord}
