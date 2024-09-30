@@ -4,6 +4,9 @@ export const content = [
   "./components/**/*.{js,ts,jsx,tsx,mdx}",
   "./app/**/*.{js,ts,jsx,tsx,mdx}",
 ]
+export const future = {
+  hoverOnlyWhenSupported: true,
+}
 export const theme = {
   extend: {
     colors: {
