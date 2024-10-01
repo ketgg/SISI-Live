@@ -49,7 +49,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/images/sisi_opengraph.png", // The path to the image in your public directory
+        url: "/images/sisi_opengraph.jpg", // The path to the image in your public directory
         width: 1200, // Recommended Open Graph image dimensions
         height: 630,
         alt: "SISI - Convert Text and Speech to American Sign Language(ASL) Animations",
@@ -61,7 +61,7 @@ export const metadata = {
     title: "SISI - Convert Text and Speech to ASL Animations",
     description:
       "Hello! I'm SISI — short for Say It, Sign It! I can turn your text or audio into American Sign Language(ASL) animations. Simply type in the box below or use the Record button to speak your input. Once you're ready, hit the Play button to watch your words come to life in ASL!",
-    images: "/images/sisi_opengraph.png",
+    images: "/images/sisi_opengraph.jpg",
   },
 }
 
